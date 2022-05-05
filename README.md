@@ -168,3 +168,29 @@ touch settings.json
 # install Husky
 
 pnpm install husky --save-dev
+
+# add husky setup script to script section to generated the .husky/pre-commit
+
+"prepare": "cd ../ && husky install ./client/.husky",
+
+```json
+
+"scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint",
+    "prepare": "cd ../ && husky install ./client/.husky",
+    "check-types": "tsc --pretty --noEmit",
+    "check-format": "prettier --check .",
+    "check-lint": "eslint . --ext ts --ext tsx  --ext js",
+    "format": "prettier --write .",
+    "test-all": "pnpm run check-format && pnpm run check-lint && pnpm run check-types && pnpm run build"
+  },
+
+```
+
+# update the pre-commit file with following
+
+cd ./client
+pnpm run test-all
