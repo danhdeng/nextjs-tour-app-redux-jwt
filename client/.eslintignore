@@ -1,0 +1,9 @@
+.next
+next-env.d.ts
+node_modules
+dist
+yarn.lock
+pnpm-lock.yaml
+package-lock.json
+.vscode\settings.json
+public
