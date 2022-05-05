@@ -10,7 +10,7 @@ pnpm install bcryptjs cors express jsonwebtoken mongoose morgan
 
 # development dependencies package
 
-pnpm install nodemon --save-dev
+pnpm install nodemon pino dotenv --save-dev
 
 # install the typescript
 
@@ -27,6 +27,10 @@ Client Setup
 # use pnpm to create nextjs app with typescript template
 
 pnpm create next-app -- --ts
+
+# install dependencies package
+
+pnpm install @reduxjs/toolkit mdb-react-ui-kit moment react-file-base64 react-google-login react-redux react-toastify @material-ui/core material-ui-chip-input axios
 
 # install eslint
 
@@ -193,4 +197,5 @@ pnpm install husky --save-dev
 # update the pre-commit file with following
 
 cd ./client
+
 pnpm run test-all

@@ -15,9 +15,19 @@
     "test-all": "pnpm run check-format && pnpm run check-lint && pnpm run check-types && pnpm run build"
   },
   "dependencies": {
+    "@material-ui/core": "^4.12.4",
+    "@reduxjs/toolkit": "^1.8.1",
+    "axios": "^0.27.2",
+    "material-ui-chip-input": "^1.1.0",
+    "mdb-react-ui-kit": "^3.0.0",
+    "moment": "^2.29.3",
     "next": "12.1.6",
     "react": "18.1.0",
-    "react-dom": "18.1.0"
+    "react-dom": "18.1.0",
+    "react-file-base64": "^1.0.3",
+    "react-google-login": "^5.2.2",
+    "react-redux": "^8.0.1",
+    "react-toastify": "^9.0.1"
   },
   "devDependencies": {
     "@next/eslint-plugin-next": "^12.1.6",
