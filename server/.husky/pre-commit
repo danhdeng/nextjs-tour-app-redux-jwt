@@ -5,6 +5,10 @@ echo '🏗️👷 Styling, testing and building your project before committing'
 
 cd ./server
 
+echo '👨‍🚒 use prettier to format all files inside the server project'
+
+pnpm run format
+
 # Check Prettier standards
 pnpm run check-format ||
 (
@@ -47,6 +51,11 @@ echo '🏗️👷 Styling, testing and building your client project before commi
 
 cd ..
 cd ./client
+
+echo '👨‍🚒 use prettier to format all files inside the client project'
+
+pnpm run format
+
 
 # Check Prettier standards
 pnpm run check-format ||
