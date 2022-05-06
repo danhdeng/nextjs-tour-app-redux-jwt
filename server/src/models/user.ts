@@ -27,7 +27,8 @@ export class User {
   @prop({ required: false })
   public googleId!: string;
 
-  public async comparePassword (password: string): Promise<boolean> {
+  // eslint-disable-next-line space-before-function-paren
+  public async comparePassword(password: string): Promise<boolean> {
     return argon2.verify(this.password, password);
   }
 }
