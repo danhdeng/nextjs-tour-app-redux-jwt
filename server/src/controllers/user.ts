@@ -10,7 +10,7 @@ export async function registerUserHandler(req: Request<{}, {}, RegisterUserBody>
   try {
     await createUser({ username, email, password });
     return res.status(StatusCodes.CREATED).send('user created successfully');
-  } catch (e:any) {
+  } catch (e: any) {
     if (e.code === 11000) {
       return res.status(StatusCodes.CONFLICT).send('User already exists');
     }
