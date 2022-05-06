@@ -6,7 +6,7 @@ Sever Setup
 
 # dependencies package
 
-pnpm install bcryptjs cors express jsonwebtoken mongoose morgan
+pnpm install bcryptjs cors express jsonwebtoken mongoose morgan @typegoose/typegoose argon2
 
 # development dependencies package
 
