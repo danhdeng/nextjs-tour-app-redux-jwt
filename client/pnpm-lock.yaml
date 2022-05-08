@@ -16,6 +16,7 @@ specifiers:
   eslint-config-prettier: ^8.5.0
   eslint-plugin-react: ^7.29.4
   husky: ^7.0.4
+  jwt-decode: ^3.1.2
   lint-staged: ^12.4.1
   material-ui-chip-input: ^1.1.0
   mdb-react-ui-kit: ^3.0.0
@@ -34,6 +35,7 @@ dependencies:
   '@material-ui/core': 4.12.4_i6xcbgvvylvakhe2evaee3dlf4
   '@reduxjs/toolkit': 1.8.1_j24pcqpkbsj43woxscsovlj4au
   axios: 0.27.2
+  jwt-decode: 3.1.2
   material-ui-chip-input: 1.1.0_cakuhclh6eaysd2occk3772akm
   mdb-react-ui-kit: 3.0.0_3vjunwlmc3akvx5gzli76tirsm
   moment: 2.29.3
@@ -1805,6 +1807,10 @@ packages:
       array-includes: 3.1.5
       object.assign: 4.1.2
     dev: true
+
+  /jwt-decode/3.1.2:
+    resolution: {integrity: sha512-UfpWE/VZn0iP50d8cz9NrZLM9lSWhcJ+0Gt/nm4by88UL+J1SiKN8/5dkjMmbEzwL2CAe+67GsegCbIKtbp75A==}
+    dev: false
 
   /language-subtag-registry/0.3.21:
     resolution: {integrity: sha512-L0IqwlIXjilBVVYKFT37X9Ih11Um5NEl9cbJIuU/SwP/zEEAbBPOnEeeuxVMf45ydWQRDQN3Nqc96OgbH1K+Pg==}
