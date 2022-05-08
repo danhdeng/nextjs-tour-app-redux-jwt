@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const RelatedTours = () => {
-  return (
-    <div>RelatedTours</div>
-  )
-}
+  return <div>RelatedTours</div>;
+};

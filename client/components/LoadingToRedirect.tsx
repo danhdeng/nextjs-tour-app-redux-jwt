@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const LoadingToRedirect = () => {
-  return (
-    <div>LoadingToRedirect</div>
-  )
-}
+  return <div>LoadingToRedirect</div>;
+};

@@ -1,7 +1,5 @@
-import React from 'react'
+import React from "react";
 
 export const Spinner = () => {
-  return (
-    <div>Spinner</div>
-  )
-}
+  return <div>Spinner</div>;
+};
