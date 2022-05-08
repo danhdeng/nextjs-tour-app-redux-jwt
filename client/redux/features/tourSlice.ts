@@ -119,7 +119,7 @@ export const searchTours = createAsyncThunk(
 
 export const getToursByTag = createAsyncThunk(
   "tour/getToursByTag",
-  async (tag:string, { rejectWithValue }) => {
+  async (tag: string, { rejectWithValue }) => {
     try {
       const response: any = await api.getTagTours(tag);
       return response.data;
