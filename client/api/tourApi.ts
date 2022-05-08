@@ -2,10 +2,12 @@ import axios from "axios";
 
 const devEnv = process.env.NODE_ENV !== "production";
 
-const { NEXT_APP_DEV_API, NEXT_APP_PROD_API } = process.env;
-
 const API = axios.create({
-  baseURL: `${devEnv ? NEXT_APP_DEV_API : NEXT_APP_PROD_API}`,
+  baseURL: `${
+    devEnv
+      ? process.env.NEXT_PUBLIC_API_ENDPOINT_DEV
+      : process.env.NEXT_PUBLIC_API_ENDPOINT_PROD
+  }`,
 });
 
 API.interceptors.request.use((req: any) => {
